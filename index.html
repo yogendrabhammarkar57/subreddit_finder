@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss"></style>
+    <script src="https://kit.fontawesome.com/477bfa2aa6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-3 bgc bg-gray-50">
+    <!-- Nav Bar -->
+    <nav class="bg-gray-100 p-3 rounded-lg mb-5 flex justify-between items-center">
+        <h1 class="text-4xl font-semibold">Reddit Client</h1>
+        <!-- <button class="addBtn1 text-2xl bg-gray-200 w-10 h-10 rounded-full
+         hover:bg-gray-100 font-semibold cursor-pointer border pb-1">+</button> -->
+        <button
+            class="group addBtn1 relative inline-flex items-center cursor-pointer justify-center p-0.5 mb-2 mr-2 text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-blue-500 to-green-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+            <span class="relative p-3 transition-all ease-in duration-75 w-10 h-10 rounded-full bg-white text-3xl flex items-center justify-center pb-4 dark:bg-gray-900 group-hover:bg-opacity-0">+</span>
+            <div class="hidden group-hover:block">
+                <div
+                class="group absolute top-12 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center rounded-sm text-center text-sm text-white">
+                <!-- <div class="h-0 w-fit border-l-8 border-r-8 border-t-8 border-transparent border-t-black"></div> -->
+                <div class="h-0 w-fit border-r-8 border-b-8 border-l-8 border-transparent border-b-black"></div>
+
+                    <div class="rounded-sm bg-black py-2 w-28 h-6 px-3">
+                        <p class="whitespace-nowrap">Add Subreddits</p>
+                    </div>
+                </div>
+            </div>
+        </button>
+
+    </nav>
+    <div class="mainContainer ml-14 relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- box -->
+    </div>
+    <!-- add reddit -->
+    <div class="absolute top-[10%] left-[30%] card1 mt-20 ">
+        <div class="relative subreddies hide ">
+            <div class="absolute cursor-pointer removesub right-5 top-3">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </div>
+            <div class=" h-[250px] flex gap-5 items-center justify-center flex-col rounded-xl w-[500px] ">
+                <h1 class="font-semibold cursor-text text-3xl pt-10">Enter the name of subreddit</h1>
+                <input class="input bg-white border-2 h-12 text-xl rounded-lg pl-5" type="text">
+                <button class="neu-button">Add subreddit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hell"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
